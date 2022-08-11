@@ -1,4 +1,4 @@
-**Project-5 by Rakshith J**
+**Project-6 by Rakshith J**
 
 ### Time taken finish project-5 : 4hrs
 
