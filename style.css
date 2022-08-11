@@ -1,0 +1,232 @@
+/* ---------import fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Roboto:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@500&family=Montserrat:ital,wght@0,200;0,400;0,600;0,900;1,700&family=Open+Sans:wght@400;401&family=Roboto:wght@500&family=Sansita+Swashed:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@500&family=Montserrat:ital,wght@0,200;0,400;0,600;0,700;0,900;1,700&family=Open+Sans:wght@400;401&family=Roboto:wght@500&family=Sansita+Swashed:wght@500&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@500&family=Montserrat:ital,wght@0,200;0,400;0,600;0,700;0,900;1,700&family=Open+Sans:wght@400;401&family=Roboto:wght@500&family=Sansita+Swashed:wght@500&display=swap");
+
+/* ------body------- */
+body {
+  background-color: #f4f3f8;
+}
+
+/* ------nav bar------ */
+
+#navbarMonstera {
+  padding-right: 6em;
+}
+
+#navFirst {
+  float: left;
+  position: absolute;
+  top: 50px;
+  left: 60px;
+  padding-right: 6em;
+}
+
+#navMid {
+  display: flex;
+  position: absolute;
+  top: 15px;
+  left: 440px;
+  padding-right: 4em;
+}
+
+div > h4 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  padding-right: 4.2em;
+}
+
+.navMid1::after {
+  content: "";
+  position: relative;
+  top: -1.5em;
+
+  display: block;
+  background: none repeat scroll 0 0 transparent;
+  height: 3px;
+  width: 0;
+
+  background: #000000;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+}
+
+.navMid1:hover:after {
+  width: 38%;
+}
+
+.navMid2:hover:after {
+  width: 50%;
+}
+
+.navMid4:hover:after {
+  width: 38%;
+}
+
+.navMid5:hover:after {
+  width: 46%;
+}
+
+/* nav icons */
+#navEnd {
+  display: flex;
+  position: absolute;
+  top: 55px;
+  right: 80px;
+  float: right;
+}
+.image {
+  padding-left: 3em;
+  cursor: grab;
+}
+
+/* body codes */
+
+.divpos {
+  position: fixed;
+  top: 300px;
+  left: 30px;
+}
+.dropbtn1 {
+  display: block;
+  font-size: 56px;
+}
+
+.dropbtn1 a:hover {
+  display: block;
+  font-size: 86px;
+}
+
+.dropbtn1:hover .divpos {
+  background-color: #ffc9af;
+}
+
+.list {
+  list-style: none;
+  padding-top: 30px;
+}
+
+.swap img:last-child {
+  display: none;
+}
+.swap:hover img:first-child {
+  display: none;
+}
+.swap:hover img:last-child {
+  display: inline-block;
+}
+
+/*body part */
+
+.divswap1 {
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
+
+.one {
+  position: absolute;
+  top: 150px;
+  left: 170px;
+  list-style: none;
+}
+
+.head1 {
+  font-size: 130px;
+  font-family: Montserrat;
+  font-weight: 700;
+  letter-spacing: 8px;
+}
+
+.para {
+  font-size: 26px;
+  font-family: Montserrat;
+  text-align: justify;
+  margin-top: -66px;
+}
+
+/* CTA button */
+
+#midWholePart12 {
+  position: absolute;
+  top: 600px;
+  left: 170px;
+  background-color: #466d50;
+  padding: 0.3em 1.5em;
+  border: none;
+  border-radius: 50px;
+  width: 240px;
+  cursor: grab;
+}
+
+#midWholePart121 {
+  display: flex;
+}
+
+.discover {
+  font-size: 32px;
+  font-family: Montserrat;
+  color: #ffffff;
+  text-align: center;
+  padding-left: 10px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+#midWholePart122 {
+  position: relative;
+  top: 28px;
+  left: 15px;
+}
+
+/* footer feeding, light and care */
+
+#midWholePart13 {
+  display: flex;
+  float: left;
+  position: absolute;
+  top: 800px;
+  left: 170px;
+}
+
+.midWholePart13Parts {
+  padding-right: 2em;
+}
+
+#midWholePart13Parts {
+  display: flex;
+}
+
+.feed2 {
+  position: relative;
+  float: left;
+  top: -42px;
+  left: 10px;
+}
+.text {
+  font-size: 12px;
+  font-family: Montserrat;
+  color: #000000;
+  text-align: left;
+  font-weight: 500;
+  margin-top: -30px;
+}
+
+.feed2 {
+  position: relative;
+  float: left;
+  top: -42px;
+  left: 10px;
+}
+
+/* background image  */
+
+#imgMain {
+  position: absolute;
+  float: right;
+  top: 200px;
+  right: 0px;
+}

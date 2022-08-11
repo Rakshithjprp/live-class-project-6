@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>live-class-project-6</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Allerta"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Abel"
+      rel="stylesheet"
+    />
+    <style>
+      /* ---------import fonts */
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Roboto:wght@500&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@500&family=Montserrat:ital,wght@0,200;0,400;0,600;0,900;1,700&family=Open+Sans:wght@400;401&family=Roboto:wght@500&family=Sansita+Swashed:wght@500&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@500&family=Montserrat:ital,wght@0,200;0,400;0,600;0,700;0,900;1,700&family=Open+Sans:wght@400;401&family=Roboto:wght@500&family=Sansita+Swashed:wght@500&display=swap");
+
+      @import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@500&family=Montserrat:ital,wght@0,200;0,400;0,600;0,700;0,900;1,700&family=Open+Sans:wght@400;401&family=Roboto:wght@500&family=Sansita+Swashed:wght@500&display=swap");
+
+      /* ------body------- */
+      body {
+        background-color: #f4f3f8;
+      }
+
+      /* ------nav bar------ */
+
+      #navbarMonstera {
+        padding-right: 6em;
+      }
+
+      #navFirst {
+        float: left;
+        position: absolute;
+        top: 50px;
+        left: 60px;
+        padding-right: 6em;
+      }
+
+      #navMid {
+        display: flex;
+        position: absolute;
+        top: 15px;
+        left: 440px;
+        padding-right: 4em;
+      }
+
+      div > h4 {
+        font-family: "Open Sans", sans-serif;
+        font-size: 30px;
+        font-weight: 600;
+        padding-right: 4.2em;
+      }
+
+      .navMid1::after {
+        content: "";
+        position: relative;
+        top: -1.5em;
+
+        display: block;
+        background: none repeat scroll 0 0 transparent;
+        height: 3px;
+        width: 0;
+
+        background: #000000;
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+      }
+
+      .navMid1:hover:after {
+        width: 38%;
+      }
+
+      .navMid2:hover:after {
+        width: 50%;
+      }
+
+      .navMid4:hover:after {
+        width: 38%;
+      }
+
+      .navMid5:hover:after {
+        width: 46%;
+      }
+
+      /* nav icons */
+      #navEnd {
+        display: flex;
+        position: absolute;
+        top: 55px;
+        right: 80px;
+        float: right;
+      }
+      .image {
+        padding-left: 3em;
+        cursor: grab;
+      }
+
+      /* body codes */
+
+      .divpos {
+        position: fixed;
+        top: 300px;
+        left: 30px;
+      }
+      .dropbtn1 {
+        display: block;
+        font-size: 56px;
+      }
+
+      .dropbtn1 a:hover {
+        display: block;
+        font-size: 86px;
+      }
+
+      .dropbtn1:hover .divpos {
+        background-color: #ffc9af;
+      }
+
+      .list {
+        list-style: none;
+        padding-top: 30px;
+      }
+
+      .swap img:last-child {
+        display: none;
+      }
+      .swap:hover img:first-child {
+        display: none;
+      }
+      .swap:hover img:last-child {
+        display: inline-block;
+      }
+
+      /*body part */
+
+      .divswap1 {
+        position: relative;
+        top: 0px;
+        left: 0px;
+      }
+
+      .one {
+        position: absolute;
+        top: 150px;
+        left: 170px;
+        list-style: none;
+      }
+
+      .head1 {
+        font-size: 130px;
+        font-family: Montserrat;
+        font-weight: 700;
+        letter-spacing: 8px;
+      }
+
+      .para {
+        font-size: 26px;
+        font-family: Montserrat;
+        text-align: justify;
+        margin-top: -66px;
+      }
+
+      /* CTA button */
+
+      #midWholePart12 {
+        position: absolute;
+        top: 600px;
+        left: 170px;
+        background-color: #466d50;
+        padding: 0.3em 1.5em;
+        border: none;
+        border-radius: 50px;
+        width: 240px;
+        cursor: grab;
+      }
+
+      #midWholePart121 {
+        display: flex;
+      }
+
+      .discover {
+        font-size: 32px;
+        font-family: Montserrat;
+        color: #ffffff;
+        text-align: center;
+        padding-left: 10px;
+        font-weight: 400;
+        letter-spacing: 1px;
+      }
+
+      #midWholePart122 {
+        position: relative;
+        top: 28px;
+        left: 15px;
+      }
+
+      /* footer feeding, light and care */
+
+      #midWholePart13 {
+        display: flex;
+        float: left;
+        position: absolute;
+        top: 800px;
+        left: 170px;
+      }
+
+      .midWholePart13Parts {
+        padding-right: 2em;
+      }
+
+      #midWholePart13Parts {
+        display: flex;
+      }
+
+      .feed2 {
+        position: relative;
+        float: left;
+        top: -42px;
+        left: 10px;
+      }
+      .text {
+        font-size: 12px;
+        font-family: Montserrat;
+        color: #000000;
+        text-align: left;
+        font-weight: 500;
+        margin-top: -30px;
+      }
+
+      .feed2 {
+        position: relative;
+        float: left;
+        top: -42px;
+        left: 10px;
+      }
+
+      /* background image  */
+
+      #imgMain {
+        position: absolute;
+        float: right;
+        top: 200px;
+        right: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav id="navbarMonstera">
+      <div id="navFirst">
+        <img src="./photos/Logo.svg" width="150" />
+      </div>
+
+      <div id="navMid">
+        <div class="navMid1">
+          <h4>Home</h4>
+        </div>
+        <div class="navMid1 navMid2">
+          <h4>Collection</h4>
+        </div>
+        <div class="navMid1">
+          <h4 class="navMid3">Shop</h4>
+        </div>
+        <div class="navMid1 navMid4">
+          <h4>About</h4>
+        </div>
+        <div class="navMid1 navMid5">
+          <h4>Contact</h4>
+        </div>
+      </div>
+
+      <div id="navEnd">
+        <div>
+          <img src="./photos/cart.svg" class="image" />
+        </div>
+        <div>
+          <img src="./photos/user.svg" class="image" />
+        </div>
+        <div>
+          <img src="./photos/search.svg" class="image" />
+        </div>
+      </div>
+    </nav>
+
+    <div id="midWholePart1">
+      <div id="midWholePart11">
+        <div class="divpos">
+          <ul>
+            <li class="list">
+              <a class="swap" href="#one">
+                <img src="./photos/bullet.png" />
+                <img src="./photos/bullet02.png" />
+              </a>
+            </li>
+            <li class="list">
+              <a class="swap" href="#two">
+                <img src="./photos/bullet.png" />
+                <img src="./photos/bullet02.png" />
+              </a>
+            </li>
+            <li class="list">
+              <a class="swap" href="#three">
+                <img src="./photos/bullet.png" />
+                <img src="./photos/bullet02.png" />
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <ul>
+            <li class="one" id="one">
+              <h1 class="head1">MONSTERA</h1>
+              <p class="para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.<br />
+                Rerum quae unde, mollitia temporibus. Eveniet, inventore
+                <br />odit. mollitia sunt, error sequi minima cumque
+                voluptatibus!
+              </p>
+            </li>
+          </ul>
+        </div>
+
+        <div id="midWholePart12">
+          <div id="midWholePart121">
+            <div>
+              <h1 class="discover">DISCOVER</h1>
+            </div>
+            <div id="midWholePart122">
+              <img src="./photos/greaterThan.svg" />
+            </div>
+          </div>
+        </div>
+
+        <div id="midWholePart13">
+          <div class="midWholePart13Parts" id="midWholePart13Parts">
+            <div class="feed1">
+              <img id="feeding" src="./photos/water plant.png" />
+            </div>
+            <div class="feed2">
+              <h4>Feeding</h4>
+              <p class="text">
+                Lorem ipsum dolor sit amet<br />
+                consecteturadipisicing elit
+              </p>
+            </div>
+          </div>
+          <div class="midWholePart13Parts" id="midWholePart13Parts">
+            <div class="feed1">
+              <img id="light" src="./photos/light.svg" alt="" />
+            </div>
+            <div class="feed2">
+              <h4>Light</h4>
+              <p class="text">
+                Lorem ipsum dolor sit amet<br />
+                consectetur adipisicing elit
+              </p>
+            </div>
+          </div>
+          <div class="midWholePart13Parts" id="midWholePart13Parts">
+            <div class="feed1">
+              <img id="care" src="./photos/plough.svg" />
+            </div>
+            <div class="feed2">
+              <h4>Care</h4>
+              <p class="text">
+                Lorem ipsum dolor sit amet<br />
+                consectetur adipisicing elit
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- image -->
+        <div>
+          <img id="imgMain" src="./photos/6_folwer_cut.png" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
