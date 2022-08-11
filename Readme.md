@@ -1,6 +1,6 @@
 **Project-6 by Rakshith J**
 
-### Time taken finish project-5 : 4hrs
+### Time taken finish project-6 : 4hrs
 
 Netlify
 
